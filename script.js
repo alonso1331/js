@@ -25,5 +25,14 @@ console.log(3**10);
 let a = "huwa";
 let b = 50;
 let c = 30;
-console.log( a + b + c);
+console.log(a + b + c); //字串後的數字無法與字串相加，所以會顯示為huwa5030
+console.log(b + c + a + b + c); //字串前的數字是數字，可以相加，所以會顯示為80huwa5030
 
+//字串與數字轉換型態
+let num1 = "16";
+let num2 = 30;
+console.log(num1 + num2); //字串與數字相加，因為num1是字串所以不法與後面的num2相加，故為1630 
+num1 = Number(num1);
+console.log(num1 + num2); //= console.log(number(num1) + num2); 
+num2 = num2.toString();
+console.log(num1 + num2); //num2變成字串，無法與num1相加

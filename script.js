@@ -36,3 +36,6 @@ num1 = Number(num1);
 console.log(num1 + num2); //= console.log(number(num1) + num2); 
 num2 = num2.toString();
 console.log(num1 + num2); //num2變成字串，無法與num1相加
+
+let pi = 3.1415926535;
+console.log(pi.toFixed(3));

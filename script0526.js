@@ -17,8 +17,17 @@
 
 
 //for計次迴圈控制
-let countI = 0;
+// let countI = 0;
+// for(i = 1; i <= 10 ; i++){
+//     countI += i;
+// }
+// document.write(countI);
+
+//break遇到符合條件跳出程式
 for(i = 1; i <= 10 ; i++){
-    countI += i;
+    if(i == 5){
+        break;
+    }
+    console.log(i);
 }
-document.write(countI);
+

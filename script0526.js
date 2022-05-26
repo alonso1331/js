@@ -51,22 +51,38 @@ console.log(typeof(b), b);
 // }
 
 //加入限制負數與超過100的條件，並給予警告提示
-let e = prompt("請輸入數字");
-e = Number(e); //將字串轉為數字，否則輸入字串會無法判讀
-if(isNaN(e)){
-    alert("請輸入阿拉伯數字");
-}else if(e < 0){
-    alert("請輸入大於0的數字");
-}else if(e >= 0 && e < 60){
-    document.write("不及格");
-}else if(e >= 60 && e < 70){
-    document.write("丙等");
-}else if(e >= 70 && e < 80){
-    document.write("乙等");
-}else if(e >= 80 && e < 90){
-    document.write("甲等");
-}else if(e >= 90 && e < 100){
-    document.write("優等");
-}else{
-    alert("請輸入小於100的數字");
+// let e = prompt("請輸入數字");
+// e = Number(e); //將字串轉為數字，否則輸入字串會無法判讀
+// if(isNaN(e)){
+//     alert("請輸入阿拉伯數字");
+// }else if(e < 0){
+//     alert("請輸入大於0的數字");
+// }else if(e >= 0 && e < 60){
+//     document.write("不及格");
+// }else if(e >= 60 && e < 70){
+//     document.write("丙等");
+// }else if(e >= 70 && e < 80){
+//     document.write("乙等");
+// }else if(e >= 80 && e < 90){
+//     document.write("甲等");
+// }else if(e >= 90 && e < 100){
+//     document.write("優等");
+// }else{
+//     alert("請輸入小於100的數字");
+// }
+
+let payway = prompt("請選擇付款方式：1.ATM匯款 2.刷卡 3.貨到付款", "1");
+switch (payway){
+    case "1":
+        document.write("我的付款方式為ATM匯款");
+        break;
+    case "2":
+        document.write("我的付款方式為刷卡");
+        break;
+    case "3":
+        document.write("我的付款方式為貨到付款");
+        break;
+    default:
+        document.write("請選擇正確的付款方式");
 }
+

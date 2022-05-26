@@ -71,18 +71,43 @@ console.log(typeof(b), b);
 //     alert("請輸入小於100的數字");
 // }
 
-let payway = prompt("請選擇付款方式：1.ATM匯款 2.刷卡 3.貨到付款", "1");
-switch (payway){
-    case "1":
-        document.write("我的付款方式為ATM匯款");
+//switch多向選擇條件控制：
+// let payway = prompt("請選擇付款方式：1.ATM匯款 2.刷卡 3.貨到付款", "1");
+// switch (payway){
+//     case "1":
+//         document.write("我的付款方式為ATM匯款");
+//         break;
+//     case "2":
+//         document.write("我的付款方式為刷卡");
+//         break;
+//     case "3":
+//         document.write("我的付款方式為貨到付款");
+//         break;
+//     default:
+//         document.write("請選擇正確的付款方式");
+// }
+
+//用switch改寫成績判定
+let e = prompt("請輸入數字");
+switch(true){ //此用法與選項功能不同，所以()內要設定true,而非變數
+    case e < 0:
+        alert("請輸入大於0的數字")
         break;
-    case "2":
-        document.write("我的付款方式為刷卡");
+    case e >= 0 && e < 60:
+        document.write("不及格");
         break;
-    case "3":
-        document.write("我的付款方式為貨到付款");
+    case e >= 60 && e < 70:
+        document.write("丙等");
+        break;
+    case e >= 70 && e < 80:
+        document.write("乙等");
+        break;  
+    case e >= 80 && e < 90:
+        document.write("甲等");
+        break;
+    case e >= 90 && e < 100:
+        document.write("優等");
         break;
     default:
-        document.write("請選擇正確的付款方式");
+        alert("請輸入小於100的數字");
 }
-

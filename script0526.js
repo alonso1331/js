@@ -24,10 +24,54 @@
 // document.write(countI);
 
 //break遇到符合條件跳出程式
-for(i = 1; i <= 10 ; i++){
-    if(i == 5){
-        break;
+// for(i = 1; i <= 10 ; i++){
+//     if(i == 5){
+//         break;
+//     }
+//     console.log(i);
+// }
+
+for(let i = 2; i <= 9; i++){
+    for(let j = 1; j <= 9; j++){
+        console.log("i=" + i, "j=" + j);
     }
-    console.log(i);
 }
 
+for(let a = 2; a <= 9; a++){
+    for (let b = 1; b <= 9; b++){
+        console.log("a=" + a, "b=" + b, "a*b =" + a * b);
+    }
+}
+
+document.writeln("列印等腰三角形</br>");
+    for(let i=0; i<5; i++){
+        for(let j=5; j>i; j--){
+            document.writeln("&nbsp");
+        }
+        for(var k=0; k<2*i+1; k++){
+            document.writeln("*");
+        }
+        document.writeln("</br>")
+    }
+document.writeln("</br>");
+document.writeln("列印直角三角形</br>");
+    for(let i=0; i<5; i++){
+        for(let j=5; j==i; j++){
+            document.writeln("&nbsp");
+        }
+         for(var k=0; k<2*i+1; k++){
+            document.writeln("*");
+        }
+        document.writeln("</br>")
+    }
+
+
+// document.writeln("列印正方形</br>");
+// let str = " ";
+// for(let i=0; i<5; i++){
+//     for(let j=5; j<5; j++){
+//         str = str + "*"
+//     }
+//     str = str + "\n"
+// }
+// document.write(str);

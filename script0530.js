@@ -69,3 +69,74 @@ for(i in student02){
 }
 document.write("</table>");
 
+document.write("</br>");
+document.write("</br>");
+document.write("建立多維陣列Array");
+document.write("</br>");
+let student03 = new Array();
+student03[0]=["Pepe", "95", "80"];
+student03[1]=["Don", "82", "85"];
+student03[2]=["Pilla", "90", "92"];
+document.write("<table border='1'><tr><td>姓名</td><td>國文</td><td>英文</td></tr>");
+for (let a = 0; a < student03.length; a++){
+    document.write("<tr>");
+    for (let b = 0; b < student03[a].length; b++){
+        document.write("<td>" + student03[a][b] + "</td>");
+    }
+    document.write("</tr>");
+}
+document.write("</table>");
+
+document.write("</br>");
+document.write("</br>");
+document.write("用for in 建立多維陣列Array");
+document.write("</br>");
+let student04 = new Array();
+student04[0]=["Pepe", "95", "80"];
+student04[1]=["Don", "82", "85"];
+student04[2]=["Pilla", "90", "92"];
+document.write("<table border='1'><tr><td>姓名</td><td>國文</td><td>英文</td></tr>");
+for(a in student04){
+    document.write("<tr>");
+    for(b in student04){
+        document.write("<td>" + student03[a][b] + "</td>");
+    }
+    document.write("</tr>");
+}
+document.write("</table>");
+
+//陣列相關函式
+let nums = [1, 5, 2, 10, 8];
+console.log(nums);
+
+nums.push(20)
+console.log(nums);
+
+nums.pop();
+console.log(nums);
+
+nums.unshift(20);
+console.log(nums);
+
+nums.shift(20);
+console.log(nums);
+
+//nums.splice(1,2);//切掉陣列排序第1位置開始(從0開始算)的2個數字
+//console.log(nums);
+//得到[1, 10, 8]
+
+//nums.splice(1, 1, 20);//切掉陣列排序第1位置(從0開始算)開始的1個數字,並補進1個數值10
+//console.log(nums);
+//得到[1, 20, 2, 10, 8]
+
+//nums.splice(3);//列出陣列排序第3位置(從0開始算)開始的數字
+//console.log(nums);
+//得到[1, 5, 2]
+
+//nums.splice(-2);//列出陣列排序倒數第2位以前的數字，不包含倒數第2位本身的值
+//console.log(nums);
+//得到[1, 5, 2]
+
+nums.splice(0, 3, 9, 8);//切掉陣列排序第0位置開始到第3位置(不包含)3本身之間的數字,並補進數值9、8
+console.log(nums);
+//得到[9, 8, 10, 8]

@@ -137,3 +137,9 @@ let redP = document.querySelector("p");
 
 //myP.style.backgroundColor = "yellow";
 myP.style = "background-color: blue; color: red; font-size: 2rem;"; //兩種用法都可以，第二種用法可以寫成一行，但是第一個用法一個性質只能寫一種，不購簡潔
+
+//---------------
+//六、Events觸發事件
+window.addEventListener("click", e => { //e是event，可簡寫為e，console.log(e)，也要簡寫e，用event，就要寫console.log(event) //此觸發事件為在網頁click滑鼠，會記錄滑鼠軌跡
+    console.log(e);
+});

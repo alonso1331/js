@@ -35,4 +35,6 @@ body{
     width: 140px;
     height: 140px;
     background: burlywood;
+    display: none; /*先不讓方塊跑出來 */
+    position: relative; /*讓方塊每次點擊後從新定位 */
 }

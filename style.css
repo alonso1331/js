@@ -1,4 +1,4 @@
-.red{
+/* .red{
     background-color: red;
 }
 
@@ -20,4 +20,19 @@
     width: 150px;
     height: 150px;
     background-color: olivedrab;
+} */
+
+body{
+    background: rgb(131, 161, 71);
+    color: #efb60c;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+#box{
+    width: 140px;
+    height: 140px;
+    background: burlywood;
 }
